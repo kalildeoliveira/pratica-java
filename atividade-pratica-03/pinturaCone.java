@@ -1,8 +1,8 @@
 import java.util.*;
 import java.math.*;
-public class pinturaCone {
+public class PinturaCone {
 	/**
-	 * lê altura, raio e tipo de tinta e retorna a área, litros, latas e valor total com
+	 * lÃª altura, raio e tipo de tinta e retorna a Ã¡rea, litros, latas e valor total com
 	 * 
 	 * 		a) valor da lata
 	 * 			tipo 1) R$ 238,9
@@ -11,7 +11,7 @@ public class pinturaCone {
 	 * 
 	 * 		b) capacidade da lata
 	 * 			volume: 18 litros
-	 * 			rendimento: 3,45 litros/m² 
+	 * 			rendimento: 3,45 litros/mÂ² 
 	 */
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
@@ -27,10 +27,10 @@ public class pinturaCone {
 		System.out.println("\"1\" - Para tinta 1");
 		System.out.println("\"2\" - Para tinta 2");
 		System.out.println("\"3\" - Para tinta 3");
-		System.out.print("Opção: ");
+		System.out.print("OpÃ§Ã£o: ");
 		opcao = entrada.next();
 		
-		// opção
+		// opÃ§Ã£o
 		if (opcao.equals(tinta1)) { 
 			valor=238.9;
 		} else if (opcao.equals(tinta2)) {
@@ -39,18 +39,18 @@ public class pinturaCone {
 			valor=758.34;
 		}
 		
-		// cálculo da área
+		// cÃ¡lculo da Ã¡rea
 		geratriz = (altura*altura)+(raio*raio);
-		geratriz = Math.sqrt(geratriz);					// g² = h²+r²
+		geratriz = Math.sqrt(geratriz);					// gÂ² = hÂ²+rÂ²
 		area = Math.PI*raio*(raio+geratriz);
 		
-		// cálculo da quantidade de latas e valor
+		// cÃ¡lculo da quantidade de latas e valor
 		litros = area * 3.45;
 		latas=litros/18;
 		valorTotal = (int)latas*valor;
 		
-		// relatório
-		System.out.println("\nA área é: "+Math.round(area));
+		// relatÃ³rio
+		System.out.println("\nA Ã¡rea Ã©: "+Math.round(area));
 		System.out.println("Litros de tinta: "+ Math.round(litros));
 		System.out.println("Quantidade de latas: "+Math.ceil(latas));
 		System.out.println("Total a pagar: R$ "+ valorTotal);
