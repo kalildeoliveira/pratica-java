@@ -113,7 +113,7 @@ public class Questao03 {
 					System.out.print(acimaDaMedia[i]+" ");
 				}
 			}
-		System.out.println("\nNúmeros abaixo da média: ");
+		System.out.print("\nNúmeros abaixo da média: ");
 			for (int i=0; i<=abaixoDaMedia.length-1; i++)  {
 			if (abaixoDaMedia[i]!=0) {
 				System.out.print(abaixoDaMedia[i]+" ");
